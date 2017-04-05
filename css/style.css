@@ -1,0 +1,105 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 6rem;
+}
+
+.clock-circle {
+  position: relative;
+  width: 15rem;
+  height: 15rem;
+  margin: 0 auto;
+  border: 5px solid #f7f7f7;
+  border-radius: 50%;
+}
+
+.clock-face {
+  width: 100%;
+  height: 100%;
+}
+
+.clock-face:after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin: -10px 0 0 -10px;
+  border-radius: 50%;
+  background: #f7f7f7;
+  content: "";
+}
+
+.clock-hour {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  padding: 4px 0 4px 25%;
+  margin: -4px 0 -4px -25%;
+  border-radius: 5px 0 0 5px;
+  background: #f7f7f7;
+  -webkit-transform-origin: 100% 50%;
+  -moz-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+}
+
+.clock-minute {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  padding: 45% 3px 0;
+  margin: -45% -3px 0;
+  border-radius: 5px 5px 0 0;
+  background: #f7f7f7;
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+
+.clock-second {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  padding: 50% 2px 0;
+  margin: -50% -2px 0 0;
+  background: #f7f7f7;
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+
+/* round bottom corners only when columns are horizontal */
+@media (min-width: 768px) {
+  .rounded-bottom-left {
+    border-bottom-left-radius: .25rem;
+  }
+  .rounded-bottom-right {
+    border-bottom-right-radius: .25rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .rounded-bottom-mobile {
+    border-bottom-left-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 6rem;
+  line-height: 6rem;
+  text-align: center;
+}
