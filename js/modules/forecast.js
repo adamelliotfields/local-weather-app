@@ -41,7 +41,7 @@ const forecast = (lat, lon) => {
             <h3 class="text-white text-center py-3" id="day-1">${moment().format('dddd')}, ${moment().format('MMMM')} ${moment().format('Do')}</h3>
             <div class="row">
               <div class="col-md-4 col-lg-3 bg-faded text-center rounded-bottom-left pt-3">
-                <canvas id="skycon-1" width="196" height="196"></canvas>
+                <canvas id="skycon" width="196" height="196"></canvas>
               </div>
               <div class="col-md-8 col-lg-9 bg-faded rounded-bottom-right rounded-bottom-mobile pt-3" id="forecast-1">
                 <p class="pb-2 mb-2" style="border-bottom: 1px solid rgba(0, 0, 0, .125);"><b>${daily} ${summary}</b></p>
@@ -55,7 +55,7 @@ const forecast = (lat, lon) => {
       // create a new Skycons instance
       const skycons = new Skycons({ color: '#292b2c' });
       // get the skycon for the condition code and append the skycon to each card
-      skycons.add('skycon-1', icon);
+      skycons.add('skycon', icon);
       // start skycon animation
       skycons.play();
     });
