@@ -1,6 +1,14 @@
 # Local Weather App
 
+A responsive weather app using GPS and IP-based geolocation.
+
 ![Local Weather](local-weather.png)
+
+
+### Live Demo
+
+[index.html](https://adamelliotfields.github.io/local-weather-app/index.html)
+
 
 ### Libraries
 [Bootstrap](https://v4-alpha.getbootstrap.com/)  
@@ -8,10 +16,12 @@
 [Moment](https://momentjs.com/)  
 [Skycons](http://darkskyapp.github.io/skycons/)
 
+
 ### APIs:
 [Dark Sky](https://darksky.net/dev/)  
 [Info IP](https://infoip.io/)  
 [Google Geocoding](https://developers.google.com/maps/documentation/geocoding/start)
+
 
 ### Notes :sun_with_face:
 
@@ -32,8 +42,3 @@ Since Dark Sky does not return location information, the Google Geocoding API ca
 For DOM manipulation and AJAX calls, I'm using the Zepto library as a light-weight alternative to jQuery. Dates and times are from Moment.
 
 The UI is built with Bootstrap, but instead of using the Card component, I've created my own with a couple media queries which doesn't have any nasty side effects when the resolution changes.
-
-
-### Live Demo
-
-[index.html](https://adamelliotfields.github.io/local-weather-app/index.html)
